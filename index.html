@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2>Abuse Writer</h2>
+  <p>you want to write abuse now</p>
+  
+  <input type="text" id="userInput" placeholder="write here...">
+  <button onclick="showResult()">확인</button>
+
+  <p id="result1"></p>
+  <p id="result2"></p>
+
+  <script>
+    function showResult() {
+      // 파이썬의 n = input() 역할
+      let n = document.getElementById("userInput").value;
+      
+      // 파이썬의 print 역할
+      document.getElementById("result1").innerText = "write abuses: " + n;
+      document.getElementById("result2").innerText = "you are " + n;
+    }
+  </script>
+</body>
+</html>
