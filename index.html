@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="UTF-8">
+  <title>Abuse Writer</title>
+</head>
 <body>
   <h2>Abuse Writer</h2>
   <p>you want to write abuse now</p>
@@ -12,11 +16,11 @@
 
   <script>
     function showResult() {
-      // 파이썬의 n = input() 역할
+      // 입력창에서 값을 가져옵니다.
       let n = document.getElementById("userInput").value;
       
-      // 파이썬의 print 역할
-      document.getElementById("result1").innerText = "write abuses: " + n;
+      // 'write abuses: '를 지우고 변수 n(입력값)만 출력하게 수정했습니다.
+      document.getElementById("result1").innerText = n; 
       document.getElementById("result2").innerText = "you are " + n;
     }
   </script>
